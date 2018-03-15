@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Swagger Expander",
+  "description": "This extension will expand all endpoints in swagger",
+  "version": "1.0",
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "./popup.html"
+  },
+  "content_scripts": [{
+      "matches": ["http://*.internal.bis2.net/ihub/swagger-ui.html"],
+      "js":      ["./content.js"]
+  }],
+  "permissions": [
+   "activeTab"
+   ]
+}
