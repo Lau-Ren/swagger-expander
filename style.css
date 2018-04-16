@@ -10,17 +10,29 @@ h1 {
 	text-align: center;
 	font-size: medium;
 }
-button#expand-all{
-    background: seagreen;
+li#expand-all{
+    background: black;
     color: white;
 }
-button#collapse-all{
-    color: : seagreen;
+li#collapse-all{
+    color: black;
     background: white;
 }
-
-button.btn{
-	height: 50px;
+ul {
+	margin-top: 15px;
+    margin-left: 0;
+    padding-left: 0;
+}
+ul li{
+	border-top: 1px solid #eceded;
+    height: 45px;
+    width: 100%;
+    float: left;
+	position: relative;
+	
+	    margin-top: 15px;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 p{

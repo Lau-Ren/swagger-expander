@@ -8,8 +8,6 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 	    for (var i = endpoints.length - 1; i >= 0; i--) {
 	      endpoints[i].setAttribute("style", "display: block;");
 	    }
-
-    	sendResponse(true);
     } else if (msg.text && (msg.text == "collapse_all")) {
         /* Call the specified callback, passing 
            the web-pages DOM content as argument */
@@ -17,7 +15,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
         for (var i = endpoints.length - 1; i >= 0; i--) {
           endpoints[i].setAttribute("style", "display: none;");
         }
-
-        sendResponse(true);
     }
+    sendResponse(msg.text);
+
 });

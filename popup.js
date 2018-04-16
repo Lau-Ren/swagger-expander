@@ -15,8 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		  chrome.tabs.sendMessage(tab.id, { text: "collapse_all" }, doStuffWithDOMCB);
 		});
 	}, false);
+
+	
 }, false);
 
-function doStuffWithDOMCB(done){
-  console.log('Expanded endpoints!')
+function doStuffWithDOMCB(action){
+	// if (action == "expand_all") {
+	// } else if (action == "collapse_all"){
+	// }
 }
+
+

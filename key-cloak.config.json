@@ -1,0 +1,8 @@
+
+{
+  "realm": "asgard",
+  "auth-server-url": "http://asgard.internal.bis2.net/auth",
+  "ssl-required": "external",
+  "resource": "login",
+  "public-client": true
+}
